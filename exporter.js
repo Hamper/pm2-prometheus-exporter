@@ -98,7 +98,7 @@ function exporter() {
     }
   });
 
-  const conf = io.initModule();
+  const conf = io.initModule({},(e,conf)=>console.log(conf, conf.port, conf.module_conf.port));
   console.log(conf, conf.port, conf.module_conf.port)
   const port = conf.port || 9209;
   const host = conf.host || '0.0.0.0';
