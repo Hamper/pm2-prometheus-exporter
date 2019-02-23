@@ -99,6 +99,7 @@ function exporter() {
   });
 
   const conf = io.initModule();
+  console.log(conf)
   const port = conf.port || 9209;
   const host = conf.host || '0.0.0.0';
 
